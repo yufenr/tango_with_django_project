@@ -7,16 +7,20 @@
 	</head>
 	
 	<body>
-		<h1>Rango says...</h1>
+		<h1>Rango says...</h1><br/>
+		<p>here is the about page<p/>
 		<div>
 			hey there partner!<br/>
-			<strong>{{ boldmessage}}</strong><br/>
+			<strong>This tutorial has been put together by Yufen Chen</strong><br/>
 		</div>
 	
 		<div> 
 			<a href="/rango/index/">Index</a><br/>
+			
 			<img src="{% static 'images/rango.jpg' %}"
-				alt="Picture of Rango" /><!--new line-->
+				alt="Picture of Rango" />
+			<img src="{{MEDIA_URL }}cat.jpg"
+				alt="Picture of a Cat" /><!--new line-->
 		</div>
 		
 	</body>
