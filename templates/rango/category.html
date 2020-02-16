@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+{% load staticfiles %}
 <html>
 
 	<head>
@@ -27,7 +27,7 @@
 		
 		<div> 
 			<a href="/rango/index/">Index</a><br/>
-			
+			<a href="{% url 'rango:add_page' category.slug %}">Add Page</a> <br />
 			<img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
 			<img src="{{MEDIA_URL }}cat.jpg" alt="Picture of a Cat" />
 		</div>
